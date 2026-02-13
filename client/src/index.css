@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply block rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm shadow-sm
+      placeholder:text-gray-400
+      focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500;
+  }
+}
